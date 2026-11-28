@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eng. Mahmoud Hezza | ShipOpt</title>
+<title>ShipOpt | Eng. Mahmoud Hezza</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,6 +208,15 @@
     animation:float 3s ease-in-out infinite;
   }
   .wa-float:hover{transform:scale(1.08);box-shadow:0 16px 34px -8px rgba(37,211,102,.8)}
+  .calc-float{
+    position:fixed;bottom:96px;left:24px;z-index:60;
+    display:flex;align-items:center;gap:8px;
+    height:44px;padding:0 16px;border-radius:999px;
+    background:#0a2350;color:#fff;font-family:"Inter",sans-serif;font-weight:700;font-size:14px;text-decoration:none;
+    box-shadow:0 12px 28px -8px rgba(10,35,80,.55);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .calc-float:hover{transform:scale(1.05);box-shadow:0 16px 34px -8px rgba(10,35,80,.65)}
   @keyframes float{50%{transform:translateY(-5px)}}
 
   @media (prefers-reduced-motion:reduce){
@@ -368,10 +377,24 @@
   </svg>
 </a>
 
+<a class="calc-float" href="https://mahmoudahezza-max.github.io/ShipOpt-Calc/" target="_blank" rel="noopener" aria-label="Open ShipOpt Calc">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <rect x="5" y="2" width="14" height="20" rx="2" fill="none" stroke="#fff" stroke-width="2"/>
+    <rect x="8" y="5" width="8" height="3" rx="0.5" fill="#fff"/>
+    <rect x="8" y="11" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+    <rect x="10.75" y="11" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+    <rect x="13.5" y="11" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+    <rect x="8" y="15" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+    <rect x="10.75" y="15" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+    <rect x="13.5" y="15" width="2.5" height="2.5" rx="0.5" fill="#fff"/>
+  </svg>
+  ShipOpt Calc
+</a>
+
 <script>
   const T = {
     ar: {
-      title: "Eng. Mahmoud Hezza | ShipOpt",
+      title: "ShipOpt | Eng. Mahmoud Hezza",
       langBtn: "English",
       heroTag: "Ship Optimization",
       tagline: "ما بنعتمدش على التقديرات. بنستخدم بحوث العمليات عشان نفحص السيناريوهات الممكنة بشكل منهجي ونوصل للحل الأمثل لكل حالة.",
@@ -423,7 +446,7 @@
       waLabel: "تواصل معي على واتساب"
     },
     en: {
-      title: "Eng. Mahmoud Hezza | ShipOpt",
+      title: "ShipOpt | Eng. Mahmoud Hezza",
       langBtn: "العربية",
       heroTag: "Ship Optimization",
       tagline: "We don't rely on estimations. We use Operations Research to systematically evaluate possible scenarios and identify the optimal solution for every case.",
